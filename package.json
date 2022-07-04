@@ -1,0 +1,17 @@
+{
+  "name": "elm-graphql-cli",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "gen-types && tsc && vite build",
+    "preview": "vite preview",
+    "gen-types": "elm-graphql http://localhost:3000/graphql --base TodoApi"
+  },
+  "devDependencies": {
+    "@dillonkearns/elm-graphql": "^4.2.4",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vite-plugin-elm": "^2.6.1"
+  }
+}
